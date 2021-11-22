@@ -56,7 +56,7 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
-      - name: Install structlog 21.2.0
-        run: pip install structlog==21.2.0
+      - name: Install structlog 21.3.0
+        run: pip install structlog==21.3.0
       - name: Test structlog with python -OO
         run: python -OO test.py
